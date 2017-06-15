@@ -89,7 +89,12 @@ entity.signalumChicken.name=Signalum Chicken
 entity.richSlagChicken.name=Rich Slag Chicken
 entity.slagChicken.name=Slag Chicken
 
-
+entity.redstonecrystalchicken.name=Redstone Crystal Chicken
+entity.stoneburntchicken.name=Stoneburnt Chicken
+entity.lunarreactivedustchicken.name=Lunar Reactive Dust Chicken
+entity.moonstonechicken.name=Moonstone Chicken
+entity.magicalwoodchicken.name=Magical Wood Chicken
+entity.demonmetalchicken.name=Demon Metal Chicken
 
 text.morechickens.notbreedable=Can't be bred
 text.morechickens.breedable=Breed
