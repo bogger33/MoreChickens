@@ -29,7 +29,7 @@ public class ExtraUtilitiesAddon extends BaseModAddon
 	public ExtraUtilitiesAddon()
 	{
 		super("extrautils2", "Extra Utilities 2","textures/entity/extrautils2/");
-		this.setStartID(120);
+		this.setStartID(2120);
 	}
 
 	@Override
