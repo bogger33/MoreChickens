@@ -103,25 +103,14 @@ public class ActuallyAdditionsAddon extends BaseModAddon
 	@Override
 	public void RegisterAllParents(List<ChickensRegistryItem> allChickens) 
 	{
-/*
-		if(Loader.isModLoaded("EnderIO"))
-		{
-			setParents(redstoneCrystalChicken, EnderIOAddon.redstoneAlloyChicken, MoreChickens.pCrystalChicken);
-			setParents(stoneburntChicken, redstoneCrystalChicken, EnderIOAddon.darkSteelChicken);
-			setParents(lunarReactiveDustChicken, redstoneCrystalChicken, BlueChicken);
-			setParents(moonstoneChicken, lunarReactiveDustChicken, EnderIOAddon.vibrantAlloyChicken);
-			setParents(magicalWoodChicken, LogChicken, MoreChickens.xpChicken);
-			setParents(demonMetalChicken, magicalWoodChicken, moonstoneChicken);
-		}
-		else
-		{
-			setParents(redstoneCrystalChicken, RedstoneChicken, MoreChickens.pCrystalChicken);
-			setParents(stoneburntChicken, redstoneCrystalChicken, GoldChicken);
-			setParents(lunarReactiveDustChicken, redstoneCrystalChicken, BlueChicken);
-			setParents(moonstoneChicken, lunarReactiveDustChicken, BlazeChicken);
-			setParents(magicalWoodChicken, LogChicken, MoreChickens.xpChicken);
-			setParents(demonMetalChicken, magicalWoodChicken, moonstoneChicken);
-		}*/
+
+		setParents(blackQuartzChicken, QuartzChicken, BlackChicken);
+		setParents(restoniaCrystalChicken, RedstoneChicken, blackQuartzChicken);
+		setParents(palisCrystalChicken, BlueChicken, blackQuartzChicken);
+		setParents(voidCrystalChicken, CoalChicken, palisCrystalChicken);
+		setParents(enoriCrystalChicken, voidCrystalChicken, IronChicken);
+		setParents(emeradicCrystalChicken, palisCrystalChicken, EmeraldChicken);
+		setParents(diamantineCrystalChicken, emeradicCrystalChicken, enoriCrystalChicken);
 	}
 
 }
