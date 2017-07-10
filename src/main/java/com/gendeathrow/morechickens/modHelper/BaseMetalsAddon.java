@@ -266,7 +266,8 @@ public class BaseMetalsAddon extends BaseModAddon
 
 		ItemStack itemSalt = this.getFirstOreDictionary("itemSalt");
 		if(itemSalt == null) itemSalt = this.getFirstOreDictionary("dustSalt");
-		if(itemSalt == null) itemSalt = this.getFirstOreDictionary("materialSalt");
+		if(itemSalt == null) itemSalt = this.getFirstOreDictionary("foodSalt");
+
 		saltChicken = addChicken(allChickens, 
 				"saltchicken", 
 				this.nextID(), 
@@ -275,11 +276,14 @@ public class BaseMetalsAddon extends BaseModAddon
 				0xEAE8DA, 0xDBD9CC, 
 				SpawnType.NONE);
 
+		ItemStack itemRubber = this.getFirstOreDictionary("itemRubber");
+		if(itemRubber == null) itemRubber = this.getFirstOreDictionary("materialRubber");
+
 		rubberChicken = addChicken(allChickens, 
 				"rubberchicken", 
 				this.nextID(), 
 				"rubber_chicken.png", 
-				this.getFirstOreDictionary("itemRubber"), 
+				itemRubber, 
 				0x895D02, 0x4E3209, 
 				SpawnType.NONE);
 
