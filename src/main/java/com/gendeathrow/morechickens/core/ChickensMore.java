@@ -40,6 +40,9 @@ import com.gendeathrow.morechickens.modHelper.MoreChickens;
 import com.gendeathrow.morechickens.modHelper.SpecialChickens;
 import com.gendeathrow.morechickens.modHelper.ThermalFoundationAddon;
 import com.gendeathrow.morechickens.modHelper.TinkersConstructAddon;
+import com.gendeathrow.morechickens.modHelper.EvilCraftAddon;
+import com.gendeathrow.morechickens.modHelper.MineFactoryReloadedAddon;
+import com.gendeathrow.morechickens.modHelper.ArsMagica2Addon;
 import com.gendeathrow.morechickens.util.LogUtil;
 import com.setycz.chickens.ChickensRegistry;
 import com.setycz.chickens.ChickensRegistryItem;
@@ -64,7 +67,10 @@ public class ChickensMore
 	    		+ "after:mekanism;"
 	    		+ "after:bigreactors;"
 	    		+ "after:EnderIO;"
-	    		+ "after:thermalfoundation";
+	    		+ "after:thermalfoundation;"
+	    		+ "after:arsmagica2;"
+	    		+ "after:evilcraft;"
+	    		+ "after:minefactoryreloaded";
 	    
 	    @Instance(MODID)
 		public static ChickensMore instance;
@@ -215,6 +221,9 @@ public class ChickensMore
 			addModAddon(new MekanismAddon());
 			addModAddon(new ThermalFoundationAddon());
 			addModAddon(new TinkersConstructAddon());
+			addModAddon(new ArsMagica2Addon());
+			addModAddon(new EvilCraftAddon());
+			addModAddon(new MineFactoryReloadedAddon());
 			
 		}
 		

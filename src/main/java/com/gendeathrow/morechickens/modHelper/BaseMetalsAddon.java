@@ -44,6 +44,8 @@ public class BaseMetalsAddon extends BaseModAddon
 	public static ChickensRegistryItem tanzaniteChicken = null;
 	public static ChickensRegistryItem topazChicken = null;
 	public static ChickensRegistryItem garnetChicken = null;
+	public static ChickensRegistryItem saltChicken = null;
+	public static ChickensRegistryItem rubberChicken = null;
 
 	@Override
 	public List<ChickensRegistryItem> registerChickens(List<ChickensRegistryItem> allChickens) 
@@ -262,6 +264,25 @@ public class BaseMetalsAddon extends BaseModAddon
 				0xA45962, 0x44171A, 
 				SpawnType.NONE);
 
+		ItemStack itemSalt = this.getFirstOreDictionary("itemSalt");
+		if(itemSalt == null) itemSalt = this.getFirstOreDictionary("dustSalt");
+		if(itemSalt == null) itemSalt = this.getFirstOreDictionary("materialSalt");
+		saltChicken = addChicken(allChickens, 
+				"saltchicken", 
+				this.nextID(), 
+				"salt_chicken.png", 
+				itemSalt, 
+				0xEAE8DA, 0xDBD9CC, 
+				SpawnType.NONE);
+
+		rubberChicken = addChicken(allChickens, 
+				"rubberchicken", 
+				this.nextID(), 
+				"rubber_chicken.png", 
+				this.getFirstOreDictionary("itemRubber"), 
+				0x895D02, 0x4E3209, 
+				SpawnType.NONE);
+
 		return allChickens;
 	}
 
@@ -312,6 +333,8 @@ public class BaseMetalsAddon extends BaseModAddon
 			setParents(garnetChicken, IronChicken, RedChicken);
 		setParents(tanzaniteChicken, QuartzChicken, PurpleChicken);
 		setParents(topazChicken, QuartzChicken, OrangeChicken);
+		setParents(saltChicken, WaterChicken, LavaChicken);
+		setParents(rubberChicken, LogChicken, OrangeChicken);
 	}
 
 
