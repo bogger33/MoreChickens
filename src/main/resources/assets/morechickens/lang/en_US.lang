@@ -57,6 +57,7 @@ entity.garnetchicken.name=Garnet Chicken
 entity.uraniumChicken.name=Uranium Chicken
 entity.aluminumChicken.name=Aluminium Chicken
 entity.constantanChicken.name=Constantan Chicken
+entity.bulletChicken.name=Bullet Chicken
 
 entity.osmiumChicken.name=Osmium Chicken
 
@@ -95,6 +96,14 @@ entity.lunarreactivedustchicken.name=Lunar Reactive Dust Chicken
 entity.moonstonechicken.name=Moonstone Chicken
 entity.magicalwoodchicken.name=Magical Wood Chicken
 entity.demonmetalchicken.name=Demon Metal Chicken
+entity.quartzenrichedironchicken.name=Quartz Enriched Iron Chicken
+
+entity.cablechicken.name=Cable Chicken
+entity.basicprocessorchicken.name=Basic Processor Chicken
+entity.improvedprocessorchicken.name=Improved Processor Chicken
+entity.advancedprocessorchicken.name=Advanced Processor Chicken
+entity.constructioncorechicken.name=Construction Core Chicken
+entity.destructioncorechicken.name=Destruction Core Chicken
 
 text.morechickens.notbreedable=Can't be bred
 text.morechickens.breedable=Breed

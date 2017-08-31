@@ -41,6 +41,7 @@ import com.gendeathrow.morechickens.modHelper.SpecialChickens;
 import com.gendeathrow.morechickens.modHelper.ThermalFoundationAddon;
 import com.gendeathrow.morechickens.modHelper.TinkersConstructAddon;
 import com.gendeathrow.morechickens.modHelper.ExtraUtilitiesAddon;
+import com.gendeathrow.morechickens.modHelper.RefinedStorageAddon;
 import com.gendeathrow.morechickens.util.LogUtil;
 import com.setycz.chickens.ChickensRegistry;
 import com.setycz.chickens.ChickensRegistryItem;
@@ -51,7 +52,7 @@ public class ChickensMore
 {
 
 		public static final String MODID = "morechickens";
-	    public static final String VERSION = "1.1.4";
+	    public static final String VERSION = "1.1.6";
 	    public static final String NAME = "More Chickens";
 	    public static final String PROXY = "com.gendeathrow.morechickens.core.proxies";
 	    public static final String CHANNELNAME = "morechickens";
@@ -66,7 +67,8 @@ public class ChickensMore
 	    		+ "after:bigreactors;"
 	    		+ "after:EnderIO;"
 	    		+ "after:thermalfoundation;"
-	    		+ "after:extrautils2";
+	    		+ "after:extrautils2;"
+	    		+ "after:refinedstorage";
 	    
 	    @Instance(MODID)
 		public static ChickensMore instance;
@@ -218,6 +220,8 @@ public class ChickensMore
 			addModAddon(new ThermalFoundationAddon());
 			addModAddon(new TinkersConstructAddon());
 			addModAddon(new ExtraUtilitiesAddon());
+			addModAddon(new RefinedStorageAddon());
+
 			
 		}
 		
